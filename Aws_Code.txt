@@ -1,0 +1,46 @@
+Notes for the AWS Solutions Architect Certification:
+
+- AWS stands for Amazon Web Services, it is one of the leading cloud service providers.
+- AWS has had 90% profit rate each year.
+- AWS provides various cloud services for cheap when compared to the other services in the market.
+- AWS distribution is divided in to Regions and availability zones.
+    Regions: Regions are the geographical locations distibuted across the globe with each region containing multiple Availability Zones.
+    Availability Zone: Availability zones are location in a city with multiple data centers. 
+            Each availability zone is:
+            - seperated by at least 100 miles to avoid loss of services if one of the AZ's were hit by a natural calamity.
+            - connected through redundant power suplies to get constant power supplies in to the AZ's. They also have back generators.
+            - Pricing of services across AZ's may differ.
+            - Some services are only available in specific AZ's as pilot before the big launch.
+- AWS has different pricing levels for users.
+    - Basic for personal use.
+    - Developer
+    - Business and
+    - Enterprise
+
+
+AWS Services:
+IAM - Identity Access Management:
+    - It allows you to manage users and their level of access to the the AWS console.
+    - Features offered by IAM:
+        - Centralised Control of your AWS account.
+        - Shared Access to AWS account.
+        - Granular Permissions.
+        - Identity Federation(Login to AWS Console using Windows Login or Facebook etc)
+        - Multifactor Authentication
+        - Temporary access to devices/users/services
+        - Password rotation
+        - Integration with other AWS services.
+        - Supports PCI DSS compliance(Credit card information gathering certificate).
+ 
+    - Key Terms in IAM:
+        Users: End users such as employees or people.
+        Groups: A collection of users with common permissions. You can have multiple groups with different permissions.
+        Policies: Policy documents are written in JSON and they give permissions as to what a user/group/role is able to do.
+        Role: Roles are used to give permissions to AWS services. Roles define what a specific AWS resource can do.
+
+    - Creating User:
+        Under IAM dashboard -> Create Individual IAM Users -> Manage User
+            - Give a name, access types.
+            - If you give both access types, you can generate a password or give  a console generated password and aws will prompt the user to change the password at signin.
+
+Changing to see the git changes.
